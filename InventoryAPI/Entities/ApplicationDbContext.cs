@@ -6,6 +6,8 @@ namespace InventoryAPI.Entity
     public class ApplicationDbContext : DbContext
     {
         public DbSet<UserProfile> UserProfile { get; set; }
+        public DbSet<Menu> Menu { get; set; }
+        public DbSet<SubMenu> SubMenu { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);           
