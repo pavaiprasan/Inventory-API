@@ -39,5 +39,69 @@ namespace InventoryAPI.Controllers
             }
             return Ok(result);
         }
+
+        [HttpGet("getalluser")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetAllUser()
+        {
+            RemoteResult<List<UserProfile>> result = new RemoteResult<List<UserProfile>>();
+            try
+            {
+                result.data = await _userService.GetAllUser();
+            }
+            catch(Exception ex)
+            {
+                result.SetError(ex);
+            }
+            return Ok(result);
+        }
+
+        [HttpGet("getuserbyid")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetUserById(long id)
+        {
+            RemoteResult<UserProfile> result = new RemoteResult<UserProfile>();
+            try
+            {
+                result.data = await _userService.GetUserById(id);
+            }
+            catch(Exception ex)
+            {
+                result.SetError(ex);
+            }
+            return Ok(result);
+        }
+
+        [HttpPost("saveuser")]
+        [AllowAnonymous]
+        public ActionResult SaveUser([FromBody] UserProfile user)
+        {
+            RemoteResult<bool> result = new RemoteResult<bool>();
+            try
+            {
+                result.data = _userService.SaveUser(user);
+            }
+            catch(Exception ex)
+            {
+                result.SetError(ex);
+            }
+            return Ok(result);
+        }
+
+        [HttpPost("updateuser")]
+        [AllowAnonymous]
+        public ActionResult UpdateUser([FromBody] UserProfile user)
+        {
+            RemoteResult<bool> result = new RemoteResult<bool>();
+            try
+            {
+                result.data = _userService.UpdateUser(user);
+            }
+            catch(Exception ex)
+            {
+                result.SetError(ex);
+            }
+            return Ok(result);
+        }
     }
 }

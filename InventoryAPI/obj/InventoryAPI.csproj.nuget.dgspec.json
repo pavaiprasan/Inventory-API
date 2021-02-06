@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\prasan\\InventoryAPI\\InventoryAPI\\InventoryAPI.csproj": {}
+    "D:\\prasan\\Textiles\\GIT\\Inventory-API\\InventoryAPI\\InventoryAPI.csproj": {}
   },
   "projects": {
-    "D:\\prasan\\InventoryAPI\\InventoryAPI\\InventoryAPI.csproj": {
+    "D:\\prasan\\Textiles\\GIT\\Inventory-API\\InventoryAPI\\InventoryAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\prasan\\InventoryAPI\\InventoryAPI\\InventoryAPI.csproj",
+        "projectUniqueName": "D:\\prasan\\Textiles\\GIT\\Inventory-API\\InventoryAPI\\InventoryAPI.csproj",
         "projectName": "InventoryAPI",
-        "projectPath": "D:\\prasan\\InventoryAPI\\InventoryAPI\\InventoryAPI.csproj",
+        "projectPath": "D:\\prasan\\Textiles\\GIT\\Inventory-API\\InventoryAPI\\InventoryAPI.csproj",
         "packagesPath": "C:\\Users\\Ramachandran\\.nuget\\packages\\",
-        "outputPath": "D:\\prasan\\InventoryAPI\\InventoryAPI\\obj\\",
+        "outputPath": "D:\\prasan\\Textiles\\GIT\\Inventory-API\\InventoryAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ramachandran\\AppData\\Roaming\\NuGet\\NuGet.Config",
