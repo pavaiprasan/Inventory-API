@@ -20,7 +20,7 @@ namespace InventoryAPI.Services.Interface
 
         Task<List<Product>> GetAllProduct();
         Task<Product> GetProductById(long id);
-        Task<List<Product>> GetProductByCodeOrName(string code);
+        Task<Product> GetProductByCodeOrName(string code);
         bool SaveProduct(Product product);
         bool UpdateProduct(Product product);
     }

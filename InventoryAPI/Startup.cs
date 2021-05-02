@@ -62,6 +62,7 @@ namespace InventoryAPI
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IPurchaseService, PurchaseService>();
+            services.AddScoped<ISalesService, SalesService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -26,6 +26,7 @@ namespace InventoryAPI.Models
         public DateTime? CreatedOn { get; set; }
         public long? ModifiedBy { get; set; }
         public DateTime? ModifiedOn { get; set; }
+        public long AvailableCount { get; set; }
 
         public Category Category { get; set; }
         public SubCategory SubCategory { get; set; }

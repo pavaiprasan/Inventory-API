@@ -124,9 +124,9 @@ namespace InventoryAPI.Service
             return product;
         }
 
-        public async Task<List<Product>> GetProductByCodeOrName(string code){
+        public async Task<Product> GetProductByCodeOrName(string code){
             using ApplicationDbContext _dbContext = new ApplicationDbContext();
-            List<Product> product = _dbContext.Product.Include(c => c.Category).Include(s => s.SubCategory).Where(i => i.ProductCode == code || i.ProductName == code).ToList();
+            Product product = _dbContext.Product.Include(c => c.Category).Include(s => s.SubCategory).FirstOrDefault(i => i.ProductCode.ToLower() == code.ToLower() || i.ProductName == code);
             return product;
         }
 

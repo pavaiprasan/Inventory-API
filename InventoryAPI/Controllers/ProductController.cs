@@ -195,7 +195,7 @@ namespace InventoryAPI.Controllers
         [HttpGet("getproductbycodeorname")]
         public async Task<IActionResult> GetProductByCodeOrName(string code)
         {
-            RemoteResult<List<Product>> result = new RemoteResult<List<Product>>();
+            RemoteResult<Product> result = new RemoteResult<Product>();
             try
             {
                 result.data = await _productservice.GetProductByCodeOrName(code);

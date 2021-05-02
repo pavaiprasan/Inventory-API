@@ -18,6 +18,9 @@ namespace InventoryAPI.Entity
         public DbSet<Purchase> Purchase { get; set; }
         public DbSet<PurchaseProducts> PurchaseProducts { get; set; }
         public DbSet<Payment> Payment { get; set; }
+        public DbSet<Sales> Sales { get; set; }
+        public DbSet<SalesProducts> SalesProducts { get; set; }
+        public DbSet<SalesPayment> SalesPayment { get; set; }
         public DbSet<PaymentType> PaymentType { get; set; }
 
 
